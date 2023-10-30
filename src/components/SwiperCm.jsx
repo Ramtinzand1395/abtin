@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 
 import styles from "./swiper.module.css"; // Import CSS module
 
-import Fade from "react-reveal/Fade";
 // import required modules
 import { EffectFade, Pagination } from "swiper/modules";
 const SwiperCm = () => {
