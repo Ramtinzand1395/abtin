@@ -25,15 +25,15 @@ const Navbar = () => {
         className={`${
           navState
             ? " bg-black bg-opacity-70 top-0 left-0  fixed "
-            : " bg-gray-400 bg-opacity-50  absolute z-10 ]"
-        } items-center z-10 w-screen h-[10vh] grid grid-cols-3`}
+            : " text-white absolute z-10 ]"
+        } items-center z-10 w-full h-[10vh] grid grid-cols-3`}
       >
         <div className="mx-10 col-span-2">
           {navbarLinks.map((item) => (
             <button
-              className={`font-vazir text-base font-semibold 
-                 hover:border-b-2 border-blue-600 py-2 
-                 my-2 mx-5 ${navState ? "text-white" : "text-gray-800"}  ${item.mega ? style.megamenu : ""}`}
+              className={`font-vazir  font-semibold 
+                 hover:border-b-2 border-red-600 py-2 
+                 my-2 mx-5 ${navState ? "text-white text-base" : "text-white text-xl"}  ${item.mega ? style.megamenu : ""}`}
               key={item.id}
             >
               {item.title}
@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="items-center flex justify-end mx-10">
-          <h2 className={`${navState ? "text-white" : "text-black"} font-tanha font-bold mx-2`}>گیم شارک</h2>
+          <h2 className={`text-white font-tanha font-bold mx-2`}>گیم شارک</h2>
           <img src={logo} className="w-10 h-10" alt="" />
         </div>
       </div>

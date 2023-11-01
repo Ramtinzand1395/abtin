@@ -1,15 +1,12 @@
-import FirstSec from "./FirstSec";
-import Fixes from "./Fixes";
-import Boxes from "./header/Boxes";
-import SwiperCm from "./header/SwiperCm";
-import Navbar from "./navbar/Navbar";
+import ScroolTest from "./ScroolTest";
+import Hero from "./hero/Hero";
+
 
 const LandingPage = () => {
   return (
     <main>
-      <SwiperCm />
-      <Boxes />
-      <FirstSec />
+      <Hero />
+      <ScroolTest />
     </main>
   );
 };
