@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./hero.module.css";
+import Boxes from "./Boxes"
 const Hero = () => {
   return (
     <div className={`${style.bg} flex flex-col items-center justify-center`}>
@@ -14,9 +15,10 @@ const Hero = () => {
         <span>A</span>{" "}
         <span>G</span>{" "}
       </h2>
-      <p className="text-white mt-10 font-tanha text-3xl">
+      <p className={`text-white mt-10 font-tanha text-5xl ${style.text}`}>
         آخرین و جدید ترین بازی ها را از ما بخواهید
       </p>
+      <Boxes />
     </div>
   );
 };
